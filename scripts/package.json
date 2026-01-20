@@ -1,0 +1,19 @@
+{
+  "name": "x402-agent-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Demo script for x402 agent payment flow",
+  "scripts": {
+    "demo": "tsx agent-demo.ts",
+    "demo:watch": "tsx watch agent-demo.ts"
+  },
+  "dependencies": {
+    "viem": "^2.21.0",
+    "x402": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
