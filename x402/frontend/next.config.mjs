@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  serverExternalPackages: ["pino-pretty"],
-};
+const nextConfig = {};
 
 export default nextConfig;
