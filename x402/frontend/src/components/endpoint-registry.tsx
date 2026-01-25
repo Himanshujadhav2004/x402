@@ -47,7 +47,7 @@ interface Endpoint {
   updatedAt: string;
 }
 
-const API_BASE_URL = "http://localhost:8080/api/endpoints";
+const API_BASE_URL = `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080"}/api/endpoints`;
 
 export function EndpointRegistry() {
   const account = useActiveAccount();

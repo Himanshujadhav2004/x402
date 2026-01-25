@@ -5,9 +5,13 @@ let io = null;
 const walletSockets = new Map();
 
 function initWebSocket(httpServer) {
+  const allowedOrigins = process.env.CORS_ORIGINS 
+    ? process.env.CORS_ORIGINS.split(',')
+    : ["http://localhost:3000", "http://localhost:3001"];
+  
   io = new Server(httpServer, {
     cors: {
-      origin: ["http://localhost:3000", "http://localhost:3001"],
+      origin: allowedOrigins,
       methods: ["GET", "POST"],
     },
     path: "/ws",

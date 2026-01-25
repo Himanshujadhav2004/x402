@@ -54,7 +54,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const API_BASE_URL = "http://localhost:8080/api/analytics";
+const API_BASE_URL = `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080"}/api/analytics`;
 
 const DEMO_MERCHANT_WALLET = "0x742d35Cc6634C0532925a3b844Bc9e7595f5BB0a";
 
