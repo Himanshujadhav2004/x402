@@ -26,7 +26,7 @@
 
 1. **Navigate to backend directory:**
    ```bash
-   cd x402/x402/backend
+   cd x402/backend
    ```
 
 2. **Install Vercel CLI** (if not already installed):
