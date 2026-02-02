@@ -26,6 +26,10 @@ app.use(cors());
 
 const cache = require("./services/cache");
 
+
+app.get("/",(req,res)=>{
+  res.send("Server has Started")
+})
 app.get("/health", (req, res) => {
   res.json({ status: "ok", service: "x402-gateway" });
 });
